@@ -13,6 +13,13 @@
 		D833597C2BF91C57004328C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D833597A2BF91C57004328C8 /* Main.storyboard */; };
 		D833597E2BF91C58004328C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D833597D2BF91C58004328C8 /* Assets.xcassets */; };
 		D83359812BF91C58004328C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D833597F2BF91C58004328C8 /* LaunchScreen.storyboard */; };
+		D83359892BFEE22D004328C8 /* RecorderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83359882BFEE22D004328C8 /* RecorderViewController.swift */; };
+		D833598C2BFEE314004328C8 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = D833598B2BFEE314004328C8 /* AudioKit */; };
+		D833598E2BFEE324004328C8 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = D833598D2BFEE324004328C8 /* AudioKit */; };
+		D83359912BFEE355004328C8 /* AudioKitEX in Frameworks */ = {isa = PBXBuildFile; productRef = D83359902BFEE355004328C8 /* AudioKitEX */; };
+		D83359942BFEE367004328C8 /* AudioKitUI in Frameworks */ = {isa = PBXBuildFile; productRef = D83359932BFEE367004328C8 /* AudioKitUI */; };
+		D83359962BFEE76A004328C8 /* Recorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83359952BFEE76A004328C8 /* Recorder.swift */; };
+		D83359992C0010E6004328C8 /* SoundpipeAudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = D83359982C0010E6004328C8 /* SoundpipeAudioKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,8 @@
 		D833597D2BF91C58004328C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D83359802BF91C58004328C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D83359822BF91C58004328C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D83359882BFEE22D004328C8 /* RecorderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecorderViewController.swift; sourceTree = "<group>"; };
+		D83359952BFEE76A004328C8 /* Recorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recorder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +40,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D83359912BFEE355004328C8 /* AudioKitEX in Frameworks */,
+				D83359992C0010E6004328C8 /* SoundpipeAudioKit in Frameworks */,
+				D833598E2BFEE324004328C8 /* AudioKit in Frameworks */,
+				D83359942BFEE367004328C8 /* AudioKitUI in Frameworks */,
+				D833598C2BFEE314004328C8 /* AudioKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +77,8 @@
 				D833597D2BF91C58004328C8 /* Assets.xcassets */,
 				D833597F2BF91C58004328C8 /* LaunchScreen.storyboard */,
 				D83359822BF91C58004328C8 /* Info.plist */,
+				D83359882BFEE22D004328C8 /* RecorderViewController.swift */,
+				D83359952BFEE76A004328C8 /* Recorder.swift */,
 			);
 			path = violinista;
 			sourceTree = "<group>";
@@ -83,6 +99,13 @@
 			dependencies = (
 			);
 			name = violinista;
+			packageProductDependencies = (
+				D833598B2BFEE314004328C8 /* AudioKit */,
+				D833598D2BFEE324004328C8 /* AudioKit */,
+				D83359902BFEE355004328C8 /* AudioKitEX */,
+				D83359932BFEE367004328C8 /* AudioKitUI */,
+				D83359982C0010E6004328C8 /* SoundpipeAudioKit */,
+			);
 			productName = violinista;
 			productReference = D83359712BF91C57004328C8 /* violinista.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +134,12 @@
 				Base,
 			);
 			mainGroup = D83359682BF91C57004328C8;
+			packageReferences = (
+				D833598A2BFEE313004328C8 /* XCRemoteSwiftPackageReference "AudioKit" */,
+				D833598F2BFEE355004328C8 /* XCRemoteSwiftPackageReference "AudioKitEX" */,
+				D83359922BFEE367004328C8 /* XCRemoteSwiftPackageReference "AudioKitUI" */,
+				D83359972C0010E6004328C8 /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */,
+			);
 			productRefGroup = D83359722BF91C57004328C8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +167,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D83359962BFEE76A004328C8 /* Recorder.swift in Sources */,
+				D83359892BFEE22D004328C8 /* RecorderViewController.swift in Sources */,
 				D83359792BF91C57004328C8 /* ViewController.swift in Sources */,
 				D83359752BF91C57004328C8 /* AppDelegate.swift in Sources */,
 				D83359772BF91C57004328C8 /* SceneDelegate.swift in Sources */,
@@ -295,6 +326,7 @@
 				DEVELOPMENT_TEAM = 8YWATHKM2F;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = violinista/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allow microphone access";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -323,6 +355,7 @@
 				DEVELOPMENT_TEAM = 8YWATHKM2F;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = violinista/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allow microphone access";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -363,6 +396,69 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D833598A2BFEE313004328C8 /* XCRemoteSwiftPackageReference "AudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.4;
+			};
+		};
+		D833598F2BFEE355004328C8 /* XCRemoteSwiftPackageReference "AudioKitEX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKitEX.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+		D83359922BFEE367004328C8 /* XCRemoteSwiftPackageReference "AudioKitUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKitUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.7;
+			};
+		};
+		D83359972C0010E6004328C8 /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/SoundpipeAudioKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D833598B2BFEE314004328C8 /* AudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D833598A2BFEE313004328C8 /* XCRemoteSwiftPackageReference "AudioKit" */;
+			productName = AudioKit;
+		};
+		D833598D2BFEE324004328C8 /* AudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D833598A2BFEE313004328C8 /* XCRemoteSwiftPackageReference "AudioKit" */;
+			productName = AudioKit;
+		};
+		D83359902BFEE355004328C8 /* AudioKitEX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D833598F2BFEE355004328C8 /* XCRemoteSwiftPackageReference "AudioKitEX" */;
+			productName = AudioKitEX;
+		};
+		D83359932BFEE367004328C8 /* AudioKitUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D83359922BFEE367004328C8 /* XCRemoteSwiftPackageReference "AudioKitUI" */;
+			productName = AudioKitUI;
+		};
+		D83359982C0010E6004328C8 /* SoundpipeAudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D83359972C0010E6004328C8 /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */;
+			productName = SoundpipeAudioKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D83359692BF91C57004328C8 /* Project object */;
 }
