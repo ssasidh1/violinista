@@ -15,6 +15,7 @@ import AVFoundation
 
 class RecorderViewController: UIViewController{
     var rec:Recorder?
+    var tuner:Tuner?
     @IBAction func recordMe(_ sender: Any) {
         if (sender as AnyObject).titleLabel?.text == "RecordMe"{
             print("Inside Recorder")
@@ -46,7 +47,9 @@ class RecorderViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        rec = Recorder()
+        //rec = Recorder()
+        print("loaded")
+        tuner = Tuner()
     }
     
 }

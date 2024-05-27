@@ -66,11 +66,11 @@ class Recorder: ObservableObject, HasAudioEngine{
         mixer.addInput(silencer)
         mixer.addInput(player)
         engine.output = mixer
-        tracker = PitchTap(input){
-            pitch,amp in DispatchQueue.main.async{
-                print("pitch and amp",pitch[0],amp[0])
-            }
-        }
+//        tracker = PitchTap(input){
+//            pitch,amp in DispatchQueue.main.async{
+//                print("pitch and amp",pitch[0],amp[0])
+//            }
+//        }
         tracker.start()
         
         do {
